@@ -20,7 +20,7 @@ import adminRoutes from "./routes/adminRoute.js";
 import { protect } from "./middlewares/authMiddleware.js";
 
 connectDB();
-
+const port = process.env.PORT || 50001 
 const app = express();
 
 // ✅ CORS FIX
